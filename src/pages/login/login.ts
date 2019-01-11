@@ -1,3 +1,7 @@
+import { SignupPage } from './../signup/signup';
+import { HomePage } from './../home/home';
+
+
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -27,10 +31,12 @@ export class LoginPage {
   }
 
   login() {
+    this.navCtrl.push('HomePage');
     console.log("login", this.valor);
   }
 
   signup() {
+    this.navCtrl.push('SignupPage')
     console.log('signup');
   }
 

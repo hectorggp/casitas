@@ -11,21 +11,21 @@
     <img src="https://dummyimage.com/300x300/fff/f00" />
   </div>
 
-  <ion-item>
+  <ion-item no-padding>
     <ion-label floating>Correo</ion-label>
     <ion-input type="text" [(ngModel)]="valor.email"></ion-input>
   </ion-item>
 
-  <ion-item>
+  <ion-item no-padding>
     <ion-label floating>Contraseña</ion-label>
     <ion-input type="password" [(ngModel)]="valor.password"></ion-input>
   </ion-item>
-
-  <button ion-button block (click)="login()">Log In</button>
-
-  <div class="strike">
-    <span>Ó</span>
-  </div>
-
-  <button ion-button block outline (click)="signup()">Sign Up</button>
+  <br>
+  <button ion-button icon-end block (click)="login()" margin-top>
+    Sign In
+    <ion-icon name="md-exit"></ion-icon>
+  </button>
+  <button ion-button block icon-end outline margin-top (click)="signup()">Sign Up
+      <ion-icon name="md-create"></ion-icon>
+  </button>
 </ion-content>
